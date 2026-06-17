@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://cd03lnmm21cl3"]
+
+[ext_resource type="Script" path="res://scripts.gd/MainScreen.gd" id="1_wwt3i"]
+[ext_resource type="Texture2D" uid="uid://c4r1vywnyfufo" path="res://Game Parts/Melee Title.png" id="2_fuyug"]
+[ext_resource type="FontFile" uid="uid://bwtdltoheyptf" path="res://Font/super_smash_4_1_by_pokemon_diamond-d7zxu6d.ttf" id="3_b5l7p"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_23uu7"]
+font = ExtResource("3_b5l7p")
+font_size = 45
+font_color = Color(1, 0.666667, 1, 1)
+
+[node name="MainScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_wwt3i")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(689, 304.5)
+scale = Vector2(1.36646, 1.3922)
+texture = ExtResource("2_fuyug")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 557.0
+offset_top = 617.0
+offset_right = 823.0
+offset_bottom = 665.0
+text = "Asteroids"
+label_settings = SubResource("LabelSettings_23uu7")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 614.0
+offset_top = 710.0
+offset_right = 766.0
+offset_bottom = 741.0
+text = "Break The Targets!"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

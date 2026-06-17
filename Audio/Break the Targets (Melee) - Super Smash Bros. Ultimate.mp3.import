@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ynsfm4ftuy87"
+path="res://.godot/imported/Break the Targets (Melee) - Super Smash Bros. Ultimate.mp3-138fb3981c1d116bb347ef0f01d814ea.mp3str"
+
+[deps]
+
+source_file="res://Audio/Break the Targets (Melee) - Super Smash Bros. Ultimate.mp3"
+dest_files=["res://.godot/imported/Break the Targets (Melee) - Super Smash Bros. Ultimate.mp3-138fb3981c1d116bb347ef0f01d814ea.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

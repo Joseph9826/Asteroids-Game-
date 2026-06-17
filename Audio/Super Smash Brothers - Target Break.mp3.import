@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bl0tjicja10jf"
+path="res://.godot/imported/Super Smash Brothers - Target Break.mp3-9c1da61fbe40219c442e6974557e34dd.mp3str"
+
+[deps]
+
+source_file="res://Audio/Super Smash Brothers - Target Break.mp3"
+dest_files=["res://.godot/imported/Super Smash Brothers - Target Break.mp3-9c1da61fbe40219c442e6974557e34dd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

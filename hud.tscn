@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://4vbc30v51vh6"]
+
+[ext_resource type="Script" path="res://scripts.gd/hud.gd" id="1_b05ud"]
+[ext_resource type="FontFile" uid="uid://bwtdltoheyptf" path="res://Font/super_smash_4_1_by_pokemon_diamond-d7zxu6d.ttf" id="2_4caa7"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ir1pd"]
+font = ExtResource("2_4caa7")
+font_size = 48
+
+[node name="HUD" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_b05ud")
+
+[node name="Score" type="Label" parent="."]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 25.0
+offset_right = 344.0
+offset_bottom = 92.0
+text = "SCORE = 9999"
+label_settings = SubResource("LabelSettings_ir1pd")
+
+[node name="Lives" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 95.0
+offset_right = 990.0
+offset_bottom = 410.0
+rotation = 6.28319
+scale = Vector2(0.2, 0.2)

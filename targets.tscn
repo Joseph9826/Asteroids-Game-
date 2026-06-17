@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bu1tiknx1tqff"]
+
+[ext_resource type="Texture2D" uid="uid://b6q6ayi3w4w8p" path="res://Game Parts/SSBM_Trophy_Target (1).png" id="1_lw2la"]
+[ext_resource type="Script" path="res://scripts.gd/targets.gd" id="1_qee76"]
+[ext_resource type="Shape2D" uid="uid://dkgynlxm2q34o" path="res://Shapes/targets.tres" id="3_kn7jc"]
+
+[node name="Targets" type="Area2D"]
+collision_layer = 5
+collision_mask = 11
+script = ExtResource("1_qee76")
+size = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_lw2la")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = ExtResource("3_kn7jc")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

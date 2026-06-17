@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://cts00bmri4dy8"]
+
+[ext_resource type="Script" path="res://scripts.gd/win_screen.gd" id="1_bkn4i"]
+[ext_resource type="Texture2D" uid="uid://c3tfpe755bklm" path="res://Font/Complete.jpg" id="2_ks85t"]
+[ext_resource type="FontFile" uid="uid://bwtdltoheyptf" path="res://Font/super_smash_4_1_by_pokemon_diamond-d7zxu6d.ttf" id="3_bsi20"]
+
+[node name="CompleteScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 11.0
+offset_right = 8.0
+offset_bottom = 11.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bkn4i")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(686.5, 413.5)
+scale = Vector2(1.09141, 1.17361)
+texture = ExtResource("2_ks85t")
+
+[node name="Restart" type="Button" parent="."]
+layout_mode = 0
+offset_left = 588.0
+offset_top = 691.0
+offset_right = 768.0
+offset_bottom = 732.0
+theme_override_fonts/font = ExtResource("3_bsi20")
+theme_override_font_sizes/font_size = 30
+text = "Continue?"
+
+[connection signal="pressed" from="Restart" to="." method="_on_restart_pressed"]

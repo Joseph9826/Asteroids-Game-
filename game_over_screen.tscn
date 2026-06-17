@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://diglbabxohqgt"]
+
+[ext_resource type="Texture2D" uid="uid://3hr507mkdsxh" path="res://Font/Black Border Failure.jpg" id="1_fdh75"]
+[ext_resource type="Script" path="res://scripts.gd/game_over_screen.gd" id="1_mrjom"]
+[ext_resource type="FontFile" uid="uid://bwtdltoheyptf" path="res://Font/super_smash_4_1_by_pokemon_diamond-d7zxu6d.ttf" id="2_3np76"]
+
+[node name="GameOverScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mrjom")
+
+[node name="Failure" type="Sprite2D" parent="."]
+position = Vector2(673, 414.5)
+scale = Vector2(1.07344, 1.14861)
+texture = ExtResource("1_fdh75")
+
+[node name="RestartButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 531.0
+offset_top = 592.0
+offset_right = 814.0
+offset_bottom = 653.0
+theme_override_fonts/font = ExtResource("2_3np76")
+theme_override_font_sizes/font_size = 48
+text = "Continue?"
+
+[connection signal="pressed" from="RestartButton" to="." method="_on_restart_button_pressed"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bwt2sbbcagywf"
+path="res://.godot/imported/Super Smash Bros Melee (GCN) - Blast KO Sound.mp3-4ca3e16fab4daeb94ffb4b88963dea07.mp3str"
+
+[deps]
+
+source_file="res://Audio/Super Smash Bros Melee (GCN) - Blast KO Sound.mp3"
+dest_files=["res://.godot/imported/Super Smash Bros Melee (GCN) - Blast KO Sound.mp3-4ca3e16fab4daeb94ffb4b88963dea07.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwliiwmnawxmi"]
+
+[ext_resource type="Texture2D" uid="uid://bcvihyc7t3jfn" path="res://Game Parts/Starfox Ship.png" id="1_pgsp3"]
+
+[node name="UILife" type="TextureRect"]
+offset_left = 107.0
+offset_top = 112.0
+offset_right = 423.0
+offset_bottom = 427.0
+rotation = 1.56964
+scale = Vector2(0.25, 0.355)
+texture = ExtResource("1_pgsp3")
+flip_h = true

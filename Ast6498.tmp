@@ -1,0 +1,62 @@
+[gd_scene load_steps=11 format=3 uid="uid://dttl6ryu7uiib"]
+
+[ext_resource type="PackedScene" uid="uid://5ayl71pqnpih" path="res://ship.tscn" id="1_8i74q"]
+[ext_resource type="Script" path="res://scripts.gd/Scripts/asteroids.gd" id="1_w3c8u"]
+[ext_resource type="PackedScene" uid="uid://4vbc30v51vh6" path="res://hud.tscn" id="2_yln1h"]
+[ext_resource type="PackedScene" uid="uid://bu1tiknx1tqff" path="res://targets.tscn" id="3_2ko5r"]
+[ext_resource type="PackedScene" uid="uid://diglbabxohqgt" path="res://game_over_screen.tscn" id="3_sfmnc"]
+[ext_resource type="PackedScene" uid="uid://ctordsbwjj7et" path="res://player_spawn_area.tscn" id="6_ajwc4"]
+[ext_resource type="AudioStream" uid="uid://cxf861074onnu" path="res://Audio/sfx_laser2.ogg" id="7_1xchm"]
+[ext_resource type="AudioStream" uid="uid://c74xph1y6rrw6" path="res://Audio/Super Smash Bros. Melee - Announcer_ Failure (With Crowd) Clean Audio.mp3" id="8_gtvpr"]
+[ext_resource type="AudioStream" uid="uid://0g253xtbhj5e" path="res://Audio/Melee Menu Select Sound.mp3" id="9_o5kj3"]
+[ext_resource type="AudioStream" uid="uid://bl0tjicja10jf" path="res://Audio/Super Smash Brothers - Target Break.mp3" id="10_ygf22"]
+
+[node name="Game" type="Node2D"]
+position = Vector2(-3, 10)
+script = ExtResource("1_w3c8u")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="HUD" parent="UI" instance=ExtResource("2_yln1h")]
+
+[node name="GameOverScreen" parent="UI" instance=ExtResource("3_sfmnc")]
+visible = false
+
+[node name="ship" parent="." instance=ExtResource("1_8i74q")]
+
+[node name="Lasers" type="Node" parent="."]
+
+[node name="Target" type="Node" parent="."]
+
+[node name="Targets" parent="Target" instance=ExtResource("3_2ko5r")]
+position = Vector2(371, 216)
+scale = Vector2(2.5, 2.5)
+size = 0
+
+[node name="Targets2" parent="Target" instance=ExtResource("3_2ko5r")]
+position = Vector2(1058, 247)
+scale = Vector2(1.8, 1.8)
+size = 1
+
+[node name="Targets3" parent="Target" instance=ExtResource("3_2ko5r")]
+position = Vector2(1126, 525)
+
+[node name="Targets4" parent="Target" instance=ExtResource("3_2ko5r")]
+position = Vector2(261, 650)
+
+[node name="PlayerRespawnPos" type="Node2D" parent="."]
+position = Vector2(677, 419)
+
+[node name="PlayerSpawnArea" parent="PlayerRespawnPos" instance=ExtResource("6_ajwc4")]
+
+[node name="LaserSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_1xchm")
+
+[node name="Announcer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_gtvpr")
+
+[node name="Select" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_o5kj3")
+
+[node name="TargetHitSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_ygf22")

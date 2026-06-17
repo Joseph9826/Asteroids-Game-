@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dsf44eop703ps"
+path="res://.godot/imported/Melee Crowd Gasp Sound Effect.mp3-000de0ead0b0703681b9d6a279f95444.mp3str"
+
+[deps]
+
+source_file="res://Audio/Melee Crowd Gasp Sound Effect.mp3"
+dest_files=["res://.godot/imported/Melee Crowd Gasp Sound Effect.mp3-000de0ead0b0703681b9d6a279f95444.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
