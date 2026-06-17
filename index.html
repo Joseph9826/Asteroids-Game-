@@ -225,6 +225,20 @@ const engine = new Engine(GODOT_CONFIG);
 	}
 }());
 		</script>
+
+		<script>
+const fullscreenBtn = document.getElementById("fullscreen-btn");
+
+fullscreenBtn.addEventListener("click", () => {
+    const canvas = document.getElementById("canvas");
+
+    if (!document.fullscreenElement) {
+        canvas.requestFullscreen();
+    } else {
+        document.exitFullscreen();
+    }
+});
+</script>
 		
 	</body>
 </html>
